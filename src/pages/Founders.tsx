@@ -11,7 +11,7 @@ const Founders = () => {
       name: "Beemari Buchi Babu",
       role: "Founder",
       description: "Visionary leader driving strategic growth and innovative digital transformations for global enterprises.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face&auto=format",
+      image: "/pics/BuchiBabu.jpg",
       quote: "Innovation happens when strategy meets execution. Our mission is to bridge that gap for businesses worldwide.",
       expertise: ["Strategic Leadership", "Business Development", "Digital Transformation", "AI Integration"],
       stats: [
@@ -28,7 +28,7 @@ const Founders = () => {
       name: "Mohamed Ayaz",
       role: "Founder ",
       description: "Technical architect crafting cutting-edge solutions that scale seamlessly across platforms and industries.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face&auto=format",
+      image: "/pics/Ayaz.jpg",
       quote: "Technology is an enabler. Our goal is to make complex systems intuitive and powerful solutions accessible to everyone.",
       expertise: ["Full-Stack Development", "AI & Machine Learning", "Cloud Architecture", "System Design"],
       stats: [

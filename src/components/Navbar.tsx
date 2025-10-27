@@ -103,8 +103,9 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold tracking-tight hover:opacity-80 transition-opacity">
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <Link to="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+            <img src="/pics/logo.jpg" alt="ENIGMOS Logo" className="h-10 w-auto" />
+            <span className="text-2xl font-bold tracking-tight text-foreground hidden sm:block">
               ENIGMOS
             </span>
           </Link>

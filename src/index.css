@@ -6,47 +6,47 @@
 
 @layer base {
   :root {
-    /* Refined dark theme with professional accents */
-    --background: 0 0% 4%;
-    --foreground: 0 0% 98%;
+    /* Cream theme with red accents */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 5%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 98%;
+    --card: 0 0% 96%;
+    --card-foreground: 0 0% 5%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 0 0% 97%;
+    --popover-foreground: 0 0% 5%;
 
-    /* Professional purple primary */
-    --primary: 249 95% 70%;
-    --primary-foreground: 0 0% 10%;
+    /* Red primary for headings */
+    --primary: 0 84% 50%;
+    --primary-foreground: 0 0% 98%;
 
-    /* Professional aqua secondary */
-    --secondary: 187 100% 50%;
-    --secondary-foreground: 0 0% 10%;
+    /* Red secondary */
+    --secondary: 0 84% 40%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 85%;
+    --muted-foreground: 0 0% 45%;
 
-    --accent: 187 100% 50%;
+    --accent: 0 84% 50%;
     --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 249 95% 70%;
+    --border: 0 0% 80%;
+    --input: 0 0% 80%;
+    --ring: 0 84% 50%;
 
     --radius: 1rem;
 
     /* Professional gradient tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(249 95% 70%), hsl(187 100% 50%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 4%), hsl(249 95% 10%));
+    --gradient-primary: linear-gradient(135deg, hsl(0 84% 50%), hsl(0 84% 60%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 98%), hsl(0 0% 95%));
     
     /* Refined glow effects */
-    --glow-primary: 0 0 40px hsl(249 95% 70% / 0.4);
-    --glow-secondary: 0 0 40px hsl(187 100% 50% / 0.4);
-    --glow-subtle: 0 0 20px hsl(249 95% 70% / 0.2);
+    --glow-primary: 0 0 40px hsl(0 84% 50% / 0.3);
+    --glow-secondary: 0 0 40px hsl(0 84% 50% / 0.3);
+    --glow-subtle: 0 0 20px hsl(0 84% 50% / 0.2);
   }
 }
 
@@ -61,19 +61,19 @@
     line-height: 1.6;
   }
 
-  /* Professional glassmorphic utilities */
+  /* Professional glassmorphic utilities for cream theme */
   .glass {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.02);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .glass-strong {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.03);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.12);
   }
 
   /* Professional glow effects */

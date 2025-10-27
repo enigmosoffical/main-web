@@ -1,34 +1,36 @@
 import { motion } from "framer-motion";
 import { Sparkles, Code, Palette, Video, Briefcase, Globe } from "lucide-react";
 import DisplayCards from "@/components/ui/display-cards";
+import { cn } from "@/lib/utils";
 
 const Works = () => {
   // Limit to 3 cards for proper stacking
   const projectCards = [
     {
       icon: <Code className="size-4 text-blue-300" />,
-      title: "E-Commerce Platform",
+      title: "Quorix -E-Commerce Platform",
       description: "Full-stack solution with AI recommendations",
       date: "Completed",
       iconClassName: "text-blue-500",
       titleClassName: "text-blue-500",
       className:
-        "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-full before:outline before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+        "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
     },
     {
       icon: <Palette className="size-4 text-orange-300" />,
-      title: "Brand Identity Design",
-      description: "Complete rebrand for fintech startup",
+      title: "Xovaxy - EdTech Platform",
+      description: "AI-powered learning platform for students",
       date: "2024",
       iconClassName: "text-orange-500",
       titleClassName: "text-orange-500",
       className:
-        "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-full before:outline before:outline-1 before:rounded-xl before:outline-border before:h-full before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+        "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-border before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-background/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration:700 hover:grayscale-0 before:left-0 before:top-0",
     },
+    
     {
       icon: <Globe className="size-4 text-green-300" />,
-      title: "SaaS Dashboard",
-      description: "Analytics platform with real-time data",
+      title: "CodeVaxy - Coding Platform",
+      description: "AI-powered Code translator For students And Instituations ",
       date: "In Progress",
       iconClassName: "text-green-500",
       titleClassName: "text-green-500",
@@ -104,7 +106,7 @@ const Works = () => {
             </span>
           </h2>
           <div className="flex min-h-[400px] w-full items-center justify-center overflow-hidden px-4">
-            <div className="w-full max-w-5xl">
+            <div className="w-full max-w-3xl">
               <DisplayCards cards={projectCards} />
             </div>
           </div>

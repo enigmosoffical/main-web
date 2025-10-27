@@ -6,7 +6,7 @@ import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { ArrowRight, Sparkles, Calendar as CalendarIcon, Clock, Video, CheckCircle2, Globe, ShoppingCart, TrendingUp, Check } from "lucide-react";
+import { ArrowRight, Calendar as CalendarIcon, Clock, Video, CheckCircle2, Globe, ShoppingCart, TrendingUp, Check } from "lucide-react";
 import { ShaderAnimation } from "@/components/ui/shader-animation";
 import { TestimonialsSection } from "@/components/ui/testimonials-with-marquee";
 import { format } from "date-fns";
@@ -157,7 +157,7 @@ const Index = () => {
         <ShaderAnimation />
         
         {/* Animated Background Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-primary/5 to-background/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-transparent to-background/50" />
         
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -165,15 +165,6 @@ const Index = () => {
           transition={{ duration: 0.8 }}
           className="container mx-auto px-4 text-center relative z-10"
         >
-          <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring" }}
-            className="inline-block mb-4"
-          >
-            <Sparkles className="w-16 h-16 text-primary animate-glow-pulse" />
-          </motion.div>
-          
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Where Creativity Meets{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
@@ -373,27 +364,14 @@ const Index = () => {
                 </p>
               </div>
 
-              {/* Client Stats */}
-              <div className="glass-strong p-6 rounded-2xl space-y-4">
-                <h3 className="text-lg font-semibold mb-4">Clients Include:</h3>
-                <div className="space-y-3">
-                  <div className="flex items-center justify-between">
-                    <span className="text-foreground">Varshith Merugu</span>
-                    <span className="text-primary font-semibold">$81K in Revenue</span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span className="text-foreground">Trey Gustafson</span>
-                    <span className="text-primary font-semibold">1M$ ARR in Revenue</span>
-                  </div>
-                </div>
-              </div>
+              
 
               {/* Testimonial */}
               <div className="glass-strong p-6 rounded-2xl">
                 <p className="text-muted-foreground italic mb-2">
                   "Phenomenal. We got what we needed!"
                 </p>
-                <p className="text-sm font-semibold">- Suhair, Founder at Spain Academy</p>
+                <p className="text-sm font-semibold">- Manoj, Co-Founder at Xovaxy</p>
               </div>
 
               {/* Booking Info */}
