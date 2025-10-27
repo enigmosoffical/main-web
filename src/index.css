@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional Design System */
+
+@layer base {
+  :root {
+    /* Refined dark theme with professional accents */
+    --background: 0 0% 4%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Professional purple primary */
+    --primary: 249 95% 70%;
+    --primary-foreground: 0 0% 10%;
+
+    /* Professional aqua secondary */
+    --secondary: 187 100% 50%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 187 100% 50%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 249 95% 70%;
+
+    --radius: 1rem;
+
+    /* Professional gradient tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(249 95% 70%), hsl(187 100% 50%));
+    --gradient-hero: linear-gradient(180deg, hsl(0 0% 4%), hsl(249 95% 10%));
+    
+    /* Refined glow effects */
+    --glow-primary: 0 0 40px hsl(249 95% 70% / 0.4);
+    --glow-secondary: 0 0 40px hsl(187 100% 50% / 0.4);
+    --glow-subtle: 0 0 20px hsl(249 95% 70% / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Professional glassmorphic utilities */
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-strong {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  /* Professional glow effects */
+  .glow-primary {
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-secondary {
+    box-shadow: var(--glow-secondary);
+  }
+
+  .glow-subtle {
+    box-shadow: var(--glow-subtle);
+  }
+
+  /* Professional smooth transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Professional backdrop blur for better browser compatibility */
+  .backdrop-blur-support {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+  }
+}
+
+/* Professional utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .prose {
+    @apply text-foreground;
+  }
+
+  .prose h1 {
+    @apply text-4xl md:text-5xl font-bold mb-4;
+  }
+
+  .prose h2 {
+    @apply text-3xl md:text-4xl font-bold mb-3;
+  }
+
+  .prose h3 {
+    @apply text-2xl font-semibold mb-2;
+  }
+
+  .prose p {
+    @apply mb-4 text-muted-foreground leading-relaxed;
+  }
+}
